@@ -5,4 +5,7 @@ function getComputerChoice(computerChoice) {
 
 let computerChoice = ['rock', 'paper', 'scissors'];
 
+let playerSelection;
+let computerSelection;
+
 console.log(getComputerChoice(computerChoice));
