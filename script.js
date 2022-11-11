@@ -8,14 +8,8 @@ function getComputerChoice(computerChoice) {
     return computerChoice[rand];
 }
 
-// function playRound(playerSelection, computerSelection) {
-//     if (playerSelection > computerSelection) {
-//         console.log(`You win! ${playerSelection} beats ${computerSelection}`);
-//     } else console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
-// }
-
 function playRound(playerSelection, computerSelection) {
-    // In case player is winning
+    // In case of player is winning
     if (playerSelection == 'rock' && computerSelection == 'scissor') {
         console.log('You win! Rock beats scissor');
     } 
@@ -25,7 +19,7 @@ function playRound(playerSelection, computerSelection) {
     else if (playerSelection == 'paper' && computerSelection == 'rock') {
         console.log('You win! Paper beats rock');
     }
-    // In case computer is winning
+    // In case of computer is winning
     else if (computerSelection == 'rock' && playerSelection == 'scissor') {
         console.log('You lose! Rock beats scissor');
     }
@@ -35,6 +29,7 @@ function playRound(playerSelection, computerSelection) {
     else if (computerSelection == 'paper' && playerSelection == 'rock') {
         console.log('You lose! Paper beats rock');
     }
+    // In case of tie
     else console.log("It's a tie!");
 }
 
