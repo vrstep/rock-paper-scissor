@@ -34,11 +34,9 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 1; i <= 5; i++) {
         playerSelection = prompt("Enter your choice").toLowerCase();
-        console.log(playerSelection);
         computerSelection = getComputerChoice(computerChoice);
-        console.log(computerSelection);
         console.log(`Round ${i}`);
         playRound(playerSelection, computerSelection);
     }
